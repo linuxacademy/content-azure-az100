@@ -1,0 +1,2 @@
+New-Item -ItemType Directory -Force -Path C:\Test_Path | Out-Null
+New-Item -Path C:\Test_Path -Name user.conf -ItemType File -Force -Value "[user]`r`nusername=TestUser`r`nsession_timeout=300" | Out-Null
