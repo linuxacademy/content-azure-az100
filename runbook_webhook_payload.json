@@ -1,0 +1,10 @@
+[
+	{
+ 		"ResourceGroup": "70533Infrastructure",
+ 		"Name": "LAToysWinTest"
+ 	},
+	{
+ 		"ResourceGroup": "70533Infrastructure",
+ 		"Name": "LAToysWinTest2"
+ 	}
+]
