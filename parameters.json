@@ -1,0 +1,90 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "southcentralus"
+        },
+        "virtualMachineCount": {
+            "value": 3
+        },
+        "virtualMachineName": {
+            "value": "LAToysProcess"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B1ms"
+        },
+        "adminUsername": {
+            "value": "latoysadmin"
+        },
+        "virtualNetworkName": {
+            "value": "LAToysAzureNetwork"
+        },
+        "networkInterfaceName": {
+            "value": "latoysprocessnic"
+        },
+        "backupFabricName": {
+            "value": "Azure"
+        },
+        "backupVaultName": {
+            "value": "LAToysRecoveryVault"
+        },
+        "backupVaultRGIsNew": {
+            "value": false
+        },
+        "backupVaultRGName": {
+            "value": "70533Infrastructure"
+        },
+        "backupPolicyName": {
+            "value": "DefaultPolicy"
+        },
+        "backupItemName": {
+            "value": "vm;iaasvmcontainerv2;70533Infrastructure;LAToysProcess"
+        },
+        "diskSizeGB": {
+            "value": "30"
+        },
+        "networkSecurityGroupName": {
+            "value": "LAToysProcess-nsg"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAkv9LC6H9gqynG4Y2xeCiliN3y4vkxrl2BEo/iIISNhNGWZBFIlospgMtzZO40YWTrDTp79UlfmpyTu4oO/ZATwGpyBBLP7G45n46m767QT2Jw/8u6NLM2VBvqxRBk4E5Py4CAeS6F7Sz3Zn6OVPGUj/Rwh6Ucf1ivNKPoncYJGIGWNnUii1W1RVK0z526jcX7Pd9VJqOlpNIJ27pDfPp6OEQLzsNt8aGbgtOdVFJ30A4vITJkYtVDa8PZBlaRgAcnKuSoOtGqOcbk7qAw8lZOV4FJ4tw1fK0lrgkvPkFaNoKwOMs9Z6cStCN3wRfoeV9WzSkQNVdqRTTqp5vv8Fg/w=="
+        },
+        "availabilitySetName": {
+            "value": "LAToysProcessAS"
+        },
+        "availabilitySetPlatformFaultDomainCount": {
+            "value": "2"
+        },
+        "availabilitySetPlatformUpdateDomainCount": {
+            "value": "5"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "70533infrastructure958"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "/subscriptions/734aaf0c-6e93-4e30-bb64-de2ab906822f/resourceGroups/70533Infrastructure/providers/Microsoft.Storage/storageAccounts/70533infrastructure958"
+        },
+        "subnetName": {
+            "value": "LA-Toys-AzurePrivate"
+        },
+        "autoShutdownStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownTime": {
+            "value": "19:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "Central Standard Time"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownNotificationEmail": {
+            "value": "trey@linuxacademy.com"
+        },
+        "autoShutdownNotificationLocale": {
+            "value": "en"
+        }
+    }
+}
